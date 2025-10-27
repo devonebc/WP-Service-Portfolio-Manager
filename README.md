@@ -1,4 +1,7 @@
-<<<<<<< HEAD
+![WordPress](https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=WordPress&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
+![Gutenberg](https://img.shields.io/badge/Gutenberg-Editor-%233499DB.svg?style=for-the-badge)
+![License](https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge)
 # WP-Service-Portfolio-Manager
 WP Service Portfolio Manager - A powerful, extensible WordPress plugin for creating and managing service portfolios with custom taxonomies, Gutenberg blocks, and complete internationalization support. Perfect for agencies and businesses.
 =======
@@ -62,4 +65,3 @@ Developed by DevOneBC
 Need custom WordPress development services or modifications to this plugin?
 
 **Hire me on Upwork:** [https://www.upwork.com/freelancers/securityseowordpress]
->>>>>>> 5340cc2 (Initial commit)
