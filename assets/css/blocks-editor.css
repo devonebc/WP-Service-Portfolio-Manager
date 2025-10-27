@@ -1,0 +1,308 @@
+/*!
+ * WP Service Portfolio Manager - Block Editor Styles
+ * Version: 2.0.0
+ */
+
+/* Block Editor Styles */
+.devonebc-services-grid-editor,
+.devonebc-single-service-editor {
+    padding: 20px;
+    border: 1px dashed #ccc;
+    background: #f9f9f9;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.devonebc-services-preview h3,
+.devonebc-single-service-preview h3 {
+    margin-top: 0;
+    color: #1e1e1e;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.devonebc-services-preview p,
+.devonebc-single-service-preview p {
+    margin: 5px 0;
+    color: #757575;
+    font-size: 14px;
+}
+
+.service-image-placeholder {
+    background: #f0f0f0;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 32px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px dashed #ddd;
+}
+
+.devonebc-single-service-preview {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Frontend Styles */
+.devonebc-services-container {
+    display: grid;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.devonebc-services-grid.columns-1 { 
+    grid-template-columns: 1fr; 
+}
+
+.devonebc-services-grid.columns-2 { 
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+.devonebc-services-grid.columns-3 { 
+    grid-template-columns: repeat(3, 1fr); 
+}
+
+.devonebc-services-grid.columns-4 { 
+    grid-template-columns: repeat(4, 1fr); 
+}
+
+.devonebc-services-grid.columns-5 { 
+    grid-template-columns: repeat(5, 1fr); 
+}
+
+.devonebc-services-grid.columns-6 { 
+    grid-template-columns: repeat(6, 1fr); 
+}
+
+.devonebc-service-item {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.devonebc-service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.devonebc-service-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.devonebc-service-thumbnail {
+    overflow: hidden;
+}
+
+.devonebc-service-thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.devonebc-service-item:hover .devonebc-service-thumbnail img {
+    transform: scale(1.05);
+}
+
+.devonebc-service-content {
+    padding: 20px;
+}
+
+.devonebc-service-title {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e1e1e;
+    line-height: 1.3;
+}
+
+.devonebc-service-excerpt {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.devonebc-service-meta {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #999;
+}
+
+.devonebc-service-date,
+.devonebc-service-author {
+    display: flex;
+    align-items: center;
+}
+
+.devonebc-service-date::before {
+    content: "📅";
+    margin-right: 5px;
+}
+
+.devonebc-service-author::before {
+    content: "👤";
+    margin-right: 5px;
+}
+
+/* Single Service Layouts */
+.devonebc-single-service.layout-vertical {
+    display: block;
+}
+
+.devonebc-single-service.layout-horizontal {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.devonebc-single-service .devonebc-service-image {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.devonebc-single-service .devonebc-service-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.devonebc-single-service .devonebc-service-description {
+    line-height: 1.6;
+    color: #444;
+}
+
+.devonebc-service-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #2271b1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.devonebc-service-link:hover {
+    background: #135e96;
+    color: #fff;
+}
+
+/* Pagination */
+.devonebc-services-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+
+.devonebc-pagination-nav a {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #f8f9fa;
+    color: #2271b1;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.devonebc-pagination-nav a:hover {
+    background: #2271b1;
+    color: #fff;
+    border-color: #2271b1;
+}
+
+/* No Services Found */
+.devonebc-no-services-found {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+    font-style: italic;
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .devonebc-services-grid.columns-4,
+    .devonebc-services-grid.columns-5,
+    .devonebc-services-grid.columns-6 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .devonebc-services-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px;
+    }
+    
+    .devonebc-single-service.layout-horizontal {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .devonebc-service-content {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .devonebc-services-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .devonebc-services-pagination {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .devonebc-service-meta {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+/* Accessibility Improvements */
+.devonebc-service-item a:focus {
+    outline: 2px solid #2271b1;
+    outline-offset: 2px;
+}
+
+.devonebc-service-link:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .devonebc-service-item {
+        border: 2px solid #000;
+    }
+    
+    .devonebc-service-link {
+        border: 2px solid #000;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    .devonebc-service-item,
+    .devonebc-service-thumbnail img,
+    .devonebc-service-link {
+        transition: none;
+    }
+}
